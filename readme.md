@@ -1,8 +1,6 @@
 # Materialize CSS And Frontend Study
 
-**Attention: This repository is for only study purpose**.
-
-This is a website for study purpose.
+This is a website created for study purpose.
 
 ## Backend
 I use Laravel as a backend for the project.
