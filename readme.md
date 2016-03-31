@@ -3,13 +3,21 @@
 This is a website created for study purpose.
 
 ## Backend
-I use Laravel as a backend for the project.
+
+[Laravel](https://laravel.com/) is used to develop the backend.
 
 ## Frontend
 
-MaterializeCSS as the CSS Framework.
+[NPM](https://www.npmjs.com/) is used to manage frontend development dependencies.
 
-CSS is coded suing SASS.
-JS is coded with ECMAScript6 and the dependencies is linked with Browserify.
+[MaterializeCSS](http://materializecss.com/) is used as CSS Framework.
 
-All frontend development tasks are Gulp Tasks developed with the Laravel Elixir API help. 
+All CSS code is written using [SASS](http://sass-lang.com/).
+All Javascript code is implemented using [ECMAScript6](http://es6-features.org/). 
+The Javascript libraries dependencies are managed using [Browserify](http://browserify.org/).
+
+[Gulp](http://gulpjs.com/) Tasks (with [Laravel Elixir API](https://github.com/laravel/elixir)) are used to help frontend development workflow. 
+
+## Docker
+
+This repository contains a Dockerfile to help manage infraestructure dependencies with [Docker](https://www.docker.com/).
