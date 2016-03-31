@@ -1,0 +1,9 @@
+nav {
+	@include primary-background;
+}
+
+.side-nav {
+  a {
+    color: $navbar-font-color
+  }
+}

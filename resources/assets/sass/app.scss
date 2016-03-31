@@ -1,2 +1,30 @@
-// @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "node_modules/materialize-css/sass/components/color";
 
+/*** Colors ***/
+$primary-color: color("teal", "accent-3");
+$secondary-color: color("amber", "accent-2");
+$success-color: color("green", "base");
+$error-color: color("red", "base");
+$link-color: color("light-blue", "darken-2");
+
+/*** Navbar ***/
+$navbar-height: 80px;
+$navbar-height-mobile: 56px;
+$navbar-font-color: #fff;
+$navbar-brand-font-size: 2.1rem;
+
+/*** SideNav ***/
+$sidenav-bg-color: color("teal", "base");
+$sidenav-padding-right: 20px;
+$sidenav-item-height: 70px;
+
+@import "node_modules/materialize-css/sass/materialize";
+@import "mixins";
+@import "badge";
+@import "footer";
+@import "global";
+@import "media";
+@import "navbar";
+@import "parallax";
+@import "parallax";
+@import "global";
