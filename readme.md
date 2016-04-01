@@ -12,6 +12,7 @@ This is a website created for study purpose.
 
 [MaterializeCSS](http://materializecss.com/) is used as CSS Framework.
 
+Materialize is not compatible to Browserify, so we use [Broserify Shim](https://github.com/thlorenz/browserify-shim) transformer to resolve JS dependencies.
 All CSS code is written using [SASS](http://sass-lang.com/).
 All Javascript code is implemented using [ECMAScript6](http://es6-features.org/). 
 The Javascript libraries dependencies are managed using [Browserify](http://browserify.org/).

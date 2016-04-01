@@ -11,7 +11,7 @@
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="http://lorempixel.com/1600/920" alt="Pai Galinha"></div>
+    <div class="parallax"><img src="http://lorempixel.com/1900/920" alt="Pai Galinha"></div>
   </div> 
 
   <div class="container">

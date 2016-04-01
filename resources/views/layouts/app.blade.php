@@ -63,13 +63,6 @@
 
     <!-- JavaScripts -->
     <script src="{{ elixir('js/app.js') }}"></script>
-    <!-- Materialize has no support for browserify yet , do I fetch it from CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $('.button-collapse').sideNav();
-        }); // end of document ready
-    </script>
      @stack('scripts')
 </body>
 </html>
