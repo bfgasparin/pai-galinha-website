@@ -1,6 +1,6 @@
 <template>
     <a href="{{ link }}">
-        <div class="col s12 m4 news" :class="{ 'z-depth-1' : hoverable, 'hoverable' : hoverable}" >
+        <div class="news" :class="{ 'z-depth-1' : hoverable, 'hoverable' : hoverable}" >
             <div class="icon-block">
                   <h3 class="center brown-text"><i class="material-icons">{{ icon }}</i></h3>
                   <h5 class="center">{{ title }}</h5>
