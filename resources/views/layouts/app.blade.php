@@ -8,28 +8,16 @@
 
     <title>teste</title>
     <link href="{{ elixir('css/app.css') }}" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
-    <nav role="navigation" class="z-depth-3" >
-    <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo">Logo</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#">Item 1</a></li>
-        <li><a href="#">Item 2</a> </li>
-        <li><a href="#">Item 3</a></li>
-      </ul>
-
-      <ul id="nav-mobile" class="side-nav">
-        <li><a href="#">Item 1</a></li>
-        <li><a href="#">Item 2</a></li>
-        <li><a href="#">Item 3</a></li>
-      </ul>
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-    </div>
-  </nav>
-
-
+    <pg-menu mobile-icon="label">
+        <pg-menu-item>Item 1</pg-menu-item>
+        <pg-menu-item>Item 2</pg-menu-item>
+        <pg-menu-item>Item 3</pg-menu-item>
+    </pg-menu>
+    
     <div id="content">
         @yield('content')
     </div>
@@ -40,8 +28,6 @@
         <div class="col l6 s12">
           <h5 class="white-text">Company</h5>
           <p class="grey-text text-lighten-4">Bla Bla Bla Bla.</p>
-
-
         </div>
         <div class="col l3 s12">
           <h5 class="white-text">Fundadores</h5>
@@ -63,6 +49,5 @@
 
     <!-- JavaScripts -->
     <script src="{{ elixir('js/app.js') }}"></script>
-     @stack('scripts')
 </body>
 </html>
