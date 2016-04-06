@@ -3,13 +3,13 @@
   "browser": {
     "jquery": "./node_modules/jquery/dist/jquery.min.js",
     "materialize": "./node_modules/materialize-css/bin/materialize.js"
-  },  
+  },
   "browserify": {
     "transform": [
       "browserify-shim"
     ]
   },
-   "browserify-shim": {
+  "browserify-shim": {
     "jquery": "$",
     "materialize": "materialize"
   },
@@ -21,6 +21,7 @@
   "dependencies": {
     "jquery": "^2.1.4",
     "laravel-elixir": "^4.0.0",
+    "laravel-elixir-vueify": "^1.0.3",
     "materialize-css": "^0.97.5",
     "particles.js": "^2.0.0"
   },
