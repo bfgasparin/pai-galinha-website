@@ -1,6 +1,6 @@
 <template>
     <a href="{{ link }}">
-        <div class="col s12 m4" :class="{ 'z-depth-1' : hoverable, 'hoverable' : hoverable}"  style="position: relative; color: black;">
+        <div class="col s12 m4 news" :class="{ 'z-depth-1' : hoverable, 'hoverable' : hoverable}" >
             <div class="icon-block">
                   <h3 class="center brown-text"><i class="material-icons">{{ icon }}</i></h3>
                   <h5 class="center">{{ title }}</h5>
@@ -29,10 +29,12 @@ export default {
         description : String,
         hoverable : Boolean
     },
-
-    ready() {
-        // Use Jquery selector instead og this.$els because Materialize sideNav function is a Jquery plugin
-        $('.parallax').parallax();
-    },
 }
 </script>
+
+<style type="scss">
+    .news {
+        position: relative; 
+        color: #000;
+    } 
+</style>
