@@ -10,7 +10,6 @@ import PgNews from './components/materialize-css/PgNews.vue';
 import PgSection from './components/materialize-css/PgSection.vue';
 
 require('materialize');
-require('particles.js');
 
 new Vue ({
 	'el': 'body',

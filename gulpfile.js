@@ -16,7 +16,7 @@ require('laravel-elixir-vueify');
  */
 
 elixir(function(mix) {
-	mix.copy('node_modules/materialize-sass/font', 'public/build/font');
+	mix.copy('node_modules/materialize-css/fonts', 'public/build/fonts');
 	mix.copy('resources/assets/config', 'public/build/config');
     mix.sass('app.scss');
     mix.browserify('app.js');

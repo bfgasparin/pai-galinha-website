@@ -18,6 +18,8 @@
 
 <script>
 
+import ParticlesJs from 'particles.js';
+
 export default {
     props: {
         id: {
@@ -30,7 +32,6 @@ export default {
     },
     ready() {
         if (this.stared) {
-            console.log(this.id);
             particlesJS.load(this.id, this.staredConfig, function() {
               console.log('callback - particles.js config loaded');
             });
