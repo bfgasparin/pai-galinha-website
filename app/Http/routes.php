@@ -1,5 +1,7 @@
 <?php
 
+use App\Phrase;
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -12,5 +14,6 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+	$phrase = Phrase::default()->first();
+    return view('welcome', compact('phrase'));
 });

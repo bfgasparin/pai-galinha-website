@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use App\Eloquent\Subscriber\Phrase as PhraseListener;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -11,9 +12,9 @@ class AppServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function boot()
+    public function boot(PhraseListener $phraseListener)
     {
-        //
+        $phraseListener->register();
     }
 
     /**
