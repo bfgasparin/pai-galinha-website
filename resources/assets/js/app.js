@@ -3,11 +3,11 @@ window.$ = window.jQuery = require('jquery');
 import Vue from 'vue';
 
 //vue components 
-import PgMenu from './components/materialize-css/PgMenu';
-import PgMenuItem from './components/materialize-css/PgMenuItem';
-import PgMainPhrase from './components/materialize-css/PgMainPhrase';
-import PgNews from './components/materialize-css/PgNews';
-import PgSection from './components/materialize-css/PgSection';
+import PgMenu from './components/materialize-css/PgMenu.vue';
+import PgMenuItem from './components/materialize-css/PgMenuItem.vue';
+import PgMainPhrase from './components/materialize-css/PgMainPhrase.vue';
+import PgNews from './components/materialize-css/PgNews.vue';
+import PgSection from './components/materialize-css/PgSection.vue';
 
 require('materialize');
 
