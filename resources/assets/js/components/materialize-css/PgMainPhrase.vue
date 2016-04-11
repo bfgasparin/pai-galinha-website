@@ -3,9 +3,9 @@
         <div class="section no-pad-bot">
             <div class="container">
                 <br><br>
-                <h1 class="header center teal-text text-lighten-2">{{ content }}</h1>
+                <h1 class="header center teal-text text-lighten-2">{{ phrase.content }}</h1>
                 <div class="row center">
-                   <h5 class="header col s12 light white-text">{{ subContent }}</h5>
+                   <h5 class="header col s12 light white-text">{{ phrase.sub_content }}</h5>
                 </div>
             </div>
         </div>
@@ -17,15 +17,14 @@
 
 export default {
     props: {
-        content: {
-          type: String,
+        phrase: {
+          type: Object,
           required: true
         },
         backgroundImg: {
           type: String,
           required: true
         },
-        subContent : String
     },
 
     ready() {
