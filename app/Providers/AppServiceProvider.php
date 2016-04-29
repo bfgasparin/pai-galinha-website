@@ -3,7 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use App\Eloquent\Subscriber\Phrase as PhraseListener;
+use App\Eloquent\Subscriber\Advice as AdviceListener;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -12,9 +12,9 @@ class AppServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function boot(PhraseListener $phraseListener)
+    public function boot(AdviceListener $adviceListener)
     {
-        $phraseListener->register();
+        $adviceListener->register();
     }
 
     /**

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-	<pg-main-phrase v-if="{{ $phrase }}" :phrase="{{ $phrase }}" background-img="http://lorempixel.com/1900/920"></pg-main-phrase>
+	<pg-advice v-if="{{ $advice }}" :advice="{{ $advice }}" background-img="http://lorempixel.com/1900/920"></pg-advice>
 
     <pg-section title="Teste" id="teste-id">
         <pg-news class="col s12 m4" link="/test" icon="today" title="My title" description="Some Description" hoverable></pg-news>
