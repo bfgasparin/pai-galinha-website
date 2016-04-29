@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class PhraseTableSeeder extends Seeder
+class AdviceTableSeeder extends Seeder
 {
     /**
      * Run the Phrase table seeds.
@@ -11,6 +11,6 @@ class PhraseTableSeeder extends Seeder
      */
     public function run()
     {
-        factory(App\Phrase::class, 3)->create();
+        factory(App\Advice::class, 3)->create();
     }
 }

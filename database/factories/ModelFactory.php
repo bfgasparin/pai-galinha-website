@@ -20,7 +20,7 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
     ];
 });
 
-$factory->define(App\Phrase::class, function (Faker\Generator $faker) {
+$factory->define(App\Advice::class, function (Faker\Generator $faker) {
     return [
         'content' => $faker->sentence,
         'sub_content' => $faker->name,
