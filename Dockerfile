@@ -1,9 +1,9 @@
 FROM brunogasparin/laravel-apache:5-onbuild
 
-# Install postgres libraries and php extension
+# Install mysql libraries and php extension
 RUN apt-get update && apt-get install -y \
-        libpq-dev \
-    && docker-php-ext-install pdo_pgsql \
+        libmysql++-dev \
+    && docker-php-ext-install pdo_mysql \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
